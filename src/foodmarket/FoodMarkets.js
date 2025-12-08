@@ -18,6 +18,7 @@ import FoodCard from "./components/FoodCard";
 import Home from "./pages/Home";
 import { Routes,Route,Link, useNavigate } from "react-router";
 import CustomerService from "./pages/CustomerService";
+import Detail from "./pages/Detail";
 
 export default function FoodMarket() {
 
@@ -104,8 +105,11 @@ react 컴포넌트 js에서 이미 사용시, import 후 사용
             <Routes>
                 <Route path = "/" element={<Home foods={foods}/>}></Route>
                 <Route path = "/detail" element={<div><h1>detail page</h1></div> }></Route>
-                <Route path = "/infoo" element={<div><h1>info</h1></div>}></Route>
-                <Route path = "/help" element={<CustomerService></CustomerService>}></Route>
+                <Route path = "/info" element={<div><h1>info</h1></div>}></Route>
+                <Route path = "/help" element={<CustomerService/>}>고객센터</Route>
+                <Route path="/detail/:id" element={<Detail foods={foods} />}></Route>
+
+                <Route path = "*" element={<div><h1>존재하지 않는 주소입니다.</h1></div>}></Route>
             </Routes>
 
         </div>
