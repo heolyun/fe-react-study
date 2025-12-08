@@ -2,6 +2,24 @@
   text-align: center;
 }
 
-.font-red{
+.font-red {
   color: red;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.textItem {
+  padding-left: 15px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;  
 }
