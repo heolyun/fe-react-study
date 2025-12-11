@@ -10,6 +10,7 @@ import Props02 from './components/Props02';
 import Quiz06 from './quiz/Quiz06';
 import NewsBlog from './newsblog/NewsBlog';
 import FoodMarket from './foodmarket/FoodMarkets';
+import Project from './Project'
 function App() {
 
   // return <State01/>
@@ -20,7 +21,8 @@ function App() {
   // return <Props02/>
   // return <Quiz06/>
   // return <NewsBlog></NewsBlog>
-  return <FoodMarket></FoodMarket>
+  // return <FoodMarket></FoodMarket>
+  return <Project></Project>
   //   <div className="App">
   //     <header className="App-header">
   //       <img src={logo} className="App-logo" alt="logo" />

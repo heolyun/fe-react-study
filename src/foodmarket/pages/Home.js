@@ -1,13 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
 import FoodCard from "../components/FoodCard";
 
-export default function Home( {foods} ) {
+function Home( {foods} ) {
 
     return (
         <div>
-            {/* <div className="main-bg" style={{ backgroundImage: "url(" + banner_bg + ")" }}></div> */}
-            <div className="main-bg"></div>
-            <Container>
+            {/* <img src={banner_bg}/> */}
+            {/* <div div className='main-bg' style={{ backgroundImage: 'url(' + banner_bg + ')' }}></div> */}
+            <div className='main-bg'></div>
+
+            < Container >
                 <Row>
                     {
                         foods.map((food, index) => {
@@ -17,9 +19,9 @@ export default function Home( {foods} ) {
                         })
                     }
                 </Row>
-            </Container>
+            </Container >
         </div>
-
-
     )
 }
+
+export default Home;
